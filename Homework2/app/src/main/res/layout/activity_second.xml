@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/point_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_back_register"
+        android:text="登录"
+        android:textColor="@color/purple_500"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/splash_logo"
+        android:drawableLeft="@drawable/splash_logo"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@mipmap/ic_user" />
+
+        <EditText
+            android:id="@+id/input_user"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:hint="请输入账号"
+            android:maxLines="1"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@mipmap/ic_password"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/input_key"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入密码"
+            android:maxLines="1"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@mipmap/ic_password"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/input_key_again"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请再次输入密码"
+            android:maxLines="1"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/click_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/teal_700"
+        android:text="确认注册"
+        android:textSize="25dp"/>
+
+</LinearLayout>
